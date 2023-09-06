@@ -84,7 +84,7 @@ const Countries = () => {
                       {el.continents}
                     </p>
                     <p className='margin-bottom-xs'>
-                      <span className='ff-sans-bold'>Capital: </span>
+                      <span className='ff-sans-bold'>Capital:{""}</span>
                       {el.capital}
                     </p>
                   </div>
