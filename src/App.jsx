@@ -5,6 +5,7 @@ import { Route, Routes, HashRouter } from "react-router-dom";
 import Countries from "./components/Countries";
 import Country from "./components/Country";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 let initialTheme = "light";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           </Routes>
         </HashRouter>
       </main>
+      <Footer />
     </div>
   );
 }

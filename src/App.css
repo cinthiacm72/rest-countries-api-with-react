@@ -20,6 +20,14 @@
   --box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
 }
 
+/* .container {
+  line-height: 1.5;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+} */
+
 /* Fonts */
 
 .fs-x-gigantic {
@@ -143,13 +151,29 @@ option {
   align-items: center;
 }
 
+/*  Attribution
+   ========================================================================== */
+.attribution {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-align: center;
+  padding-block: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 64%);
+}
+
 /* Components */
 
 .container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
   background-color: var(--background);
   color: var(--foreground);
   transition: all 0.5s;
-  min-height: 100vh;
+  line-height: 1.5;
 }
 
 .main-header {
@@ -175,6 +199,7 @@ option {
   box-shadow: var(--box-shadow);
   transition: transform 0.3s ease-in-out;
   background-color: var(--light);
+  animation: FadeIn 1s forwards;
 }
 
 .card a {
@@ -213,6 +238,10 @@ option {
 }
 
 /* Country Details */
+
+.details {
+  animation: FadeIn 1s forwards;
+}
 
 .details-img {
   width: 50%;
@@ -262,6 +291,18 @@ option {
 
 .button:hover {
   background-color: #00000020;
+}
+
+/*  Animations
+   ========================================================================== */
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Utilities */

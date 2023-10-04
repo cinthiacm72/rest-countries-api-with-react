@@ -1,4 +1,4 @@
-const Header = ({ theme, handleLightMode, handleDarkMode, initialTheme }) => {
+const Header = ({ theme, handleLightMode, handleDarkMode }) => {
   return (
     <header className='main-header '>
       <div className='title container-fluid-1440 flex jc-space-between ai-center padding-top-md padding-bottom-md'>
